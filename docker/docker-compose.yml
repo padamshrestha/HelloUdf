@@ -1,0 +1,9 @@
+version: '3'
+services:
+    dotnet-spark-helloudf:
+      container_name: dotnet-spark-helloudf
+      image: 3rdman/dotnet-spark:latest
+      network_mode: host
+      volumes:
+      - $HOME/Projects/HelloUdf/bin/Debug:/dotnet/Debug
+  
