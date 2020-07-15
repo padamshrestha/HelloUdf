@@ -1,11 +1,18 @@
-﻿namespace HelloUdf
+﻿using System.Threading.Tasks;
+
+namespace HelloUdf
 {
     class Program
     {
-        static void Main(string[] args)
+        // static void Main(string[] args)
+        // {
+        //     // HelloUdfExample.Run();
+        //     // CountAndAggregateMnM.Run();
+        // }
+
+        static async Task Main(string[] args)
         {
-            // HelloUdfExample.Run();
-            CountAndAggregateMnM.Run();
+            await Yahoo.Tick();
         }
     }
 }
